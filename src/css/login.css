@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.contain{
+    position: relative;
+height: 100vh;
+    background: linear-gradient(to right, transparent, var(--primary-color));   
+}
+.board{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* height:100vh; */
+    justify-content: center;
+    align-items: center;
+    
+}
+.loginmain{
+    margin: auto;
+    background: var(--secondary-color);
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px rgba(111, 113, 119, 0.593);
+    background: url('./images/login.jpeg');
+    background-size:cover ;
+}
+.first{
+    width:35vw;
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+.first img{
+    width:0%;
+    height: 100%;
+}
+.second{
+    padding:15px 20px;
+    margin: 15px;
+    background-color: rgba(240, 248, 255, 0.175);
+    border-radius: 15px;
+    min-width: 250px;
+}
+.second p{
+    text-align: center;
+    color:var(--another-color);
+    margin: 0 0 15px 0;;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 0.1rem 0.01rem rgba(0, 0, 0, 0.774);
+}
+.second label{
+    /* text-shadow:1px 1px 1px rgba(237, 115, 115, 0.774); */
+    font-size: 1.2rem;
+    color:var(--text-color);
+
+}
+.second input{
+    display: block;
+    border: none;
+    /* border: 1px solid var(--shadow-color); */
+    /* box-shadow: 0px 1px 0px 0.05rem var(--shadow-color); */
+    border-bottom: 1px solid var(--shadow-color);
+  background: none;
+  margin:1px 0 20px 0;
+  width:auto;
+
+
+}
+.second .loginbtn{
+    align-items: center;
+    text-align: center;
+    margin:40px 0 10px 0;
+}
+.loginbtn button{
+    border:none;
+    background: var(--primary-color);
+    border-radius: 5px;
+    padding:10px 20px;
+    margin:0 5px 0 0;
+    color:var(--text-color);
+}
+.loginbtn a{
+    color:var(--another-color);
+    padding:0 0 0 10px;
+    /* text-decoration:; */
+
+}
+@media screen and (max-width: 700px) {
+    .first{
+        width:40vw;
+    }
+.second{
+    min-width: auto;
+    /* padding: 10px 10px;; */
+}
+}
+@media screen and (max-width: 500px) {
+    .second{
+        padding: 6px 5px;;
+        margin: 10px;
+    }
+    .second p{
+        font-size: 1.6rem;
+    }
+    .second label{
+        /* text-shadow:1px 1px 1px rgba(237, 115, 115, 0.774); */
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .loginmain{
+        background: linear-gradient(190deg,rgb(248, 105, 105),var(--secondary-color),var(--primary-color),var(--text-color));
+    }
+    .first{
+        display: none;
+    }
+    .second{
+        min-width: 80vw;
+        padding: 10px 45px ;
+       
+    }
+    .second label{
+        color: var(--primary-color);
+    }
+    .second .field{
+            padding :7px 0;
+    }
+}

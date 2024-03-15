@@ -1,0 +1,33 @@
+:root{
+    /* background-color: black; */
+    /* --primary-color: rgb(239, 191, 152);
+    --secondary-color:#573a15;
+    --shadow-color:#7f5927; */
+    /* --primary-color: #73605B ;
+    --secondary-color:#D09683;
+    --shadow-color:#372e2b;
+    --text-color:#330000; */
+    /* --primary-color: #B1A296 ;
+    --secondary-color: #496b83;
+    --shadow-color:#5D5C61;
+    --text-color:#557A95; */
+
+    --primary-color: #2F4454 ;
+    --secondary-color: #376E6F;
+    --shadow-color:#213a3b79;
+    --text-color:#ec8aa2;
+    --another-color:#d02b62;
+}
+a{
+    border:none;
+    text-decoration: none;
+    /* text-decoration-color: ; */
+    background-color: transparent;
+    color:var(--text-color)
+}
+button{
+    cursor: pointer;
+}
+input:focus{
+outline: none;
+}

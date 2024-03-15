@@ -1,0 +1,86 @@
+.mainshow{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.mainshow img{
+width:50vw;
+height:50vw;
+max-width: 500px;
+max-height: 500px;
+
+}
+.image{
+    justify-self:center;
+    align-self: center;
+}
+.show{
+
+    /* margin:20px 0 0 20px; */
+   
+    
+}
+.mainshow .title{
+    font-size: 1.5rem;
+    color:var(--secondary-color);
+    font-weight: 900;
+    text-shadow: 0.05rem 0.01rem 0.01rem rgba(80, 77, 77, 0.649);
+    margin: 10px;
+}
+.prices{
+    margin-left: 9px;
+}
+.prices .special{
+color:var(--primary-color);
+margin:2px 0;
+}
+.prices .pric{
+font-weight: 800;
+font-size: 2rem;
+color: var(--secondary-color);
+
+}
+.rate{
+    display:flex;
+    align-items: center;
+}
+.rate .rating{
+    background-color: var(--primary-color);
+    padding:5px 12px ;
+    border-radius: 10px;
+    margin:10px;
+    color: var(--text-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.count{
+    color:var(--another-color)
+}
+.btns{
+    display: flex;
+
+}
+.show button{
+    width:50vw;
+    height:40px;
+    border: none;
+    /* font-size: ; */
+    font-weight: 500;
+    font-size: medium;
+    color:var(--text-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.show .adcart{
+color: var(--primary-color);
+font-weight: 600;
+
+    
+}
+.show .buynow{
+    background-color: var(--primary-color);
+}

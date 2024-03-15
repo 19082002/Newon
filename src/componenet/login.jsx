@@ -1,0 +1,40 @@
+import React from "react";
+import "../css/login.css"
+
+export default function Login() {
+  console.log("hgjk");
+  return (
+    <>
+    <div className="contain">
+    <div className="board">
+      <div className="loginmain">
+        <div className="first">
+          <img src='../public/images/log.png'></img>
+        </div>
+        <div className="second">
+          <p>Login</p>
+          <div className="field">
+          <div className="inputfield">
+            <div className="user">
+          <label htmlFor="fname" required>Username</label>
+          <input type="text" name="fname" />
+          </div>
+          <div className="pass">
+          <label htmlFor="fname">Password</label>
+          <input type="password" name="fname" />
+          </div>
+          </div>
+         
+          <div className="loginbtn">
+          <button>Login</button>
+          <a href="/register">Sign up</a>
+          </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    </>
+  );
+}

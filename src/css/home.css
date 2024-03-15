@@ -1,0 +1,20 @@
+*{
+    padding:0;
+    margin:0;
+}
+.main{
+    width:auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.main .t{
+    position: relative;
+    width:100vw;
+}
+.main  img{
+    width: 100%;
+    max-width: 1300px;
+    max-height: 600px;
+}
