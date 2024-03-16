@@ -6,8 +6,6 @@ import Home from './componenet/home.jsx'
 import Cart from './componenet/cart.jsx'
 import Register from './componenet/register.jsx'
 import Showproduct from './componenet/showproduct.jsx'
-
-import ReactDOM from "react-dom/client"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
 

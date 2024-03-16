@@ -1,5 +1,6 @@
-import React from "react";
+
 import "../css/login.css"
+import { NavLink } from "react-router-dom";
 
 export default function Login() {
   console.log("hgjk");
@@ -9,7 +10,7 @@ export default function Login() {
     <div className="board">
       <div className="loginmain">
         <div className="first">
-          <img src='../public/images/log.png'></img>
+          <img src='/images/log.png'></img>
         </div>
         <div className="second">
           <p>Login</p>
@@ -27,7 +28,7 @@ export default function Login() {
          
           <div className="loginbtn">
           <button>Login</button>
-          <a href="/register">Sign up</a>
+          <NavLink to={`/register`}>Sign up</NavLink>
           </div>
           </div>
           </div>

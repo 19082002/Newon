@@ -90,7 +90,7 @@ export default function Product() {
       <div className="cardboard">
         <div onClick={() => fetchdata()}>
           {" "}
-          <div className="catgcard kitchen"></div>
+          <div className="catgcard all"></div>
           <span>All</span>
         </div>
         <div onClick={() => fun(`men's clothing`)}>
@@ -103,7 +103,7 @@ export default function Product() {
           <span> Womens</span>
         </div>
         <div onClick={() => fun("electronics")}>
-          <div className="catgcard kid"></div>
+          <div className="catgcard elec"></div>
           <span> Electronics</span>
         </div>
         <div onClick={() => fun("jewelery")}>

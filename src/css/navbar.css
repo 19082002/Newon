@@ -68,7 +68,7 @@ h3 {
 .cart {
   border: none;
   border-radius: 2px;
-  padding: 5px;
+  /* padding: 5px; */
   margin: 0 5px;
   background: none;
   /* background-color:#f3900e29 ; */
@@ -92,7 +92,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 top:0;
-right:0;
+/* right:0; */
 }
 
 
@@ -128,5 +128,8 @@ right:0;
   
 .navbar .icon{
  fill:var(--text-color); 
+}
+.navbar .cart span{
+  right: 0;
 }
 }

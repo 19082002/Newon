@@ -1,6 +1,6 @@
-import React from 'react'
 import '../css/login.css'
-import Login from "./login.jsx"
+// import Login from "./login.jsx"
+import { NavLink } from "react-router-dom";
 
 export default function Register() {
   return (
@@ -9,7 +9,7 @@ export default function Register() {
     <div className="board">
       <div className="loginmain">
         <div className="first">
-          <img src='../public/images/log.png'></img>
+          <img src='/images/log.png'></img>
         </div>
         <div className="second">
           <p>Create Account</p>
@@ -30,7 +30,7 @@ export default function Register() {
           </div>
           <div className="loginbtn">
           <button>Sign up</button>
-          <a href="/login">Sign in</a>
+          <NavLink to={`/login`}>Sign in</NavLink>
           </div>
           </div>
           </div>

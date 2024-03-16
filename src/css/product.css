@@ -112,36 +112,31 @@ align-items: center;
 }
 .men{
     color:rgb(0, 0, 0);
-    background: url('./images/mencat.jpg');
+    background: url('/images/mencat.jpg');
     background-size: cover;
 }
 .women{
 
-    background: url('./images/womencat.jpeg');
+    background: url('/images/womencat.jpeg');
     background-size: cover;
 }
-.kid{
+.elec{
 
-    background: url('./images/kids.jpeg');
+    background: url('/images/elec.jpg');
     background-size: cover;
 }
-.kitchen{
+.all{
 
-    background: url('./images/kitchen.jpeg');
-    background-size: cover;
-}
-.shoes{
-    color:wheat;
-    background: url('./images/shoe.jpeg');
+    background: url('/images/kitchen.jpeg');
     background-size: cover;
 }
 .beauty{
-    background: url('./images/beauty.jpeg');
+    background: url('/images/beauty.jpeg');
     background-size: cover;
 }
 .jwl{
     color:wheat;
-    background: url('./images/jew.jpg');
+    background: url('/images/jew.jpg');
     background-size: cover;
 }
 
