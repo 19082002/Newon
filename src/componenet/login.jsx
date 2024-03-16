@@ -10,7 +10,7 @@ export default function Login() {
     <div className="board">
       <div className="loginmain">
         <div className="first">
-          <img src='/images/log.png'></img>
+          <img src='/log.png'></img>
         </div>
         <div className="second">
           <p>Login</p>
