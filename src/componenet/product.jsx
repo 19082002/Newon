@@ -4,15 +4,17 @@ import {useDispatch } from "react-redux";
 import { addwishItem } from "../redux/action/index.js";
 import  Loading  from"./loading.jsx"
 import { NavLink } from "react-router-dom";
-import { Star } from 'lucide-react';
+import { Star,Heart } from 'lucide-react';
 
 export default function Product() {
   const [data, setData] = useState();
   const [load, setLoad] = useState(true);
+  const [click, setClick] = useState(true);
   // const url = 'https://kohls.p.rapidapi.com/products/list?limit=24&offset=1&dimensionValueID=AgeAppropriate%3ATeens';
 
   const fetchdata = async () => {
     // if(load)
+    // let clicked=false;
     const url = "https://fakestoreapi.com/products";
     const res = await fetch(url);
     const json = await res.json();
@@ -26,12 +28,12 @@ export default function Product() {
 
   const dispatch=useDispatch();
   const addproduct=(product)=>{
+      setClick(true);
       dispatch(addwishItem(product));
   }
 
   const Show = () => {
     return (
-      // <div className="main">
       <>
         <div className="cardmain">
           {data &&
@@ -40,11 +42,13 @@ export default function Product() {
               return (
                 <>
                   <div className="card" key={item.id}>
+                  <NavLink to={`/product/${item.id}`}>
                     <img
                       src={item.image}
                       className="card-img-top"
                       alt={item.title}
                     />
+                    </NavLink>
                     <div className="card-body">
                       <h5 className="card-title">
                         {item.title.substring(0, 15)}....
@@ -65,15 +69,17 @@ export default function Product() {
                           <Star size="18px" className={`icon ${rate>=5&&  'checked'}`}/>
                           
                         </div>
-                        <NavLink to={`/product/${item.id}`} className="btn">
+                        <NavLink to={`/product/${item.id}`}className="btn">
                           Buy Now
                         </NavLink>
                       </div>
                     </div>
-
                     <div className="hid">
-                      <p className="fa fa-heart" onClick={()=>addproduct(item)}></p>
+                      <p className="fvticon" onClick={(e)=>{
+                        e.target.classList.add('active')
+                        addproduct(item)}}> <Heart/></p>
                     </div>
+                    
                   </div>
                 </>
               );

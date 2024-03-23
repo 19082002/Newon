@@ -40,6 +40,7 @@ export default function Showproduct() {
           </div>
           <div className="show">
             <p className="title">{data.title}</p>
+            <p className="desc">{data.description}</p>
             <div className="prices">
               <p className="special">Special Price</p>
               <p className="pric">${data.price}</p>

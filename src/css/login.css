@@ -24,7 +24,7 @@ height: 100vh;
     display: flex;
     border-radius: 10px;
     box-shadow: 4px 4px 2px rgba(111, 113, 119, 0.593);
-    background: url('./images/login.jpeg');
+    background-image: url("./images/login.jpeg");
     background-size:cover ;
 }
 .loginmain .first{

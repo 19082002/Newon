@@ -17,7 +17,7 @@ max-height: 500px;
 }
 .show{
 
-    /* margin:20px 0 0 20px; */
+   
    
     
 }
@@ -26,16 +26,18 @@ max-height: 500px;
     color:var(--secondary-color);
     font-weight: 900;
     text-shadow: 0.05rem 0.01rem 0.01rem rgba(80, 77, 77, 0.649);
-    margin: 10px;
+    margin: 10px 20px;
 }
-.prices{
-    margin-left: 9px;
+.mainshow .desc{
+    color:var(--shadow-color);
+    margin: 0 20px;
 }
 .prices .special{
 color:var(--primary-color);
-margin:2px 0;
+margin: 10px 0 0 20px;
 }
 .prices .pric{
+    margin: 0 20px;
 font-weight: 800;
 font-size: 2rem;
 color: var(--secondary-color);
