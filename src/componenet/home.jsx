@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/home.css";
 import Product from"./product.jsx"
 
@@ -9,13 +8,12 @@ export default function home() {
   return (
     <>
       <div className="main">
-            {/* <div className="t"> */}
+            <div className="background">
               <img src="/images/back.png" />
-            {/* </div> */}
+            </div>
             </div>
         <Product/>
 
     </>
   );
 }
-;

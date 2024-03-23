@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import {useDispatch } from "react-redux";
-import { addItem } from "../redux/action";
+import { addcartItem } from "../redux/action";
 import "../css/show.css";
 import  Loading  from"./loading.jsx"
 import { Star,LockKeyhole  } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function Showproduct() {
 
   const dispatch=useDispatch();
   const addproduct=(product)=>{
-      dispatch(addItem(product));
+      dispatch(addcartItem(product));
   }
  
   useEffect(() => {

@@ -1,9 +1,10 @@
 const cart = [];
+const wish=[];
 
 const handle = (state = cart, action) => {
   const product = action.payload;
   switch (action.type) {
-    case "ADDITEM":
+    case "ADDCARTITEM":
 
         {const exist = state.find((x) => x.id === product.id);
         if (exist) {
@@ -18,7 +19,7 @@ const handle = (state = cart, action) => {
         ];
             }
         }
-    case "DELITEM":
+    case "DELCARTITEM":
        { const exist1 = state.find((x) => x.id === product.id);
         if(exist1.qty === 1) {
             return state.filter((x) => x.id !==exist1.id)
@@ -35,4 +36,41 @@ const handle = (state = cart, action) => {
   }
 };
 
-export default handle;
+const wishhandle=(state = wish, action)=>{
+  const product = action.payload;
+  switch (action.type) {
+    case "ADDWISHITEM":
+
+    {const exist3 = state.find((x) => x.id === product.id);
+    if (exist3) {
+    return state.map((x) =>
+      x.id === product.id ? { ...x, qty: x.qty + 1 } : x
+    );
+    } 
+    else {
+        const product=action.payload;
+    return [...state, 
+        {...product, qty: 1}
+    ];
+        }
+    }
+case "DELWISHITEM":
+  {
+    const exist2 = state.find((x) => x.id === product.id);
+    if(exist2.qty === 1) {
+        return state.filter((x) => x.id !==exist2.id)
+    }else{
+        return state.map((x) =>
+      x.id === product.id ? { ...x, qty: x.qty - 1 } : x
+    );
+    }
+  }
+
+default:
+  return state;
+
+  }
+
+}
+
+export default {handle,wishhandle};

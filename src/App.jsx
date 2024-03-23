@@ -5,6 +5,7 @@ import Login from "./componenet/login.jsx"
 import Home from './componenet/home.jsx'
 import Cart from './componenet/cart.jsx'
 import Register from './componenet/register.jsx'
+import Wishlist from './componenet/wish.jsx'
 import Showproduct from './componenet/showproduct.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="login" element={<Login/>} />
           <Route path="cart" element={<Cart/>} />
           <Route path="register" element={<Register/>} />
+          <Route path="wishlist" element={<Wishlist/>} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

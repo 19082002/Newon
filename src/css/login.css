@@ -27,24 +27,24 @@ height: 100vh;
     background: url('./images/login.jpeg');
     background-size:cover ;
 }
-.first{
+.loginmain .first{
     width:35vw;
     max-width: 300px;
     max-height: 300px;
     
 }
-.first img{
+.loginmain .first img{
     width:0%;
     height: 100%;
 }
-.second{
+.loginmain .second{
     padding:15px 20px;
     margin: 15px;
     background-color: rgba(240, 248, 255, 0.175);
     border-radius: 15px;
     min-width: 250px;
 }
-.second p{
+.loginmain .second p{
     text-align: center;
     color:var(--another-color);
     margin: 0 0 15px 0;;
@@ -52,13 +52,13 @@ height: 100vh;
     font-weight: 800;
     text-shadow: 0.1rem 0.01rem rgba(0, 0, 0, 0.774);
 }
-.second label{
+.loginmain .second label{
     /* text-shadow:1px 1px 1px rgba(237, 115, 115, 0.774); */
     font-size: 1.2rem;
     color:var(--text-color);
 
 }
-.second input{
+.loginmain .second input{
     display: block;
     border: none;
     /* border: 1px solid var(--shadow-color); */
@@ -70,7 +70,7 @@ height: 100vh;
 
 
 }
-.second .loginbtn{
+.loginmain .second .loginbtn{
     align-items: center;
     text-align: center;
     margin:40px 0 10px 0;
@@ -84,7 +84,7 @@ height: 100vh;
     color:var(--text-color);
 }
 .loginbtn a{
-    color:var(--another-color);
+    color:rgba(255, 255, 255, 0.921);
     padding:0 0 0 10px;
     /* text-decoration:; */
 
@@ -99,14 +99,14 @@ height: 100vh;
 }
 }
 @media screen and (max-width: 500px) {
-    .second{
+    .loginmain .second{
         padding: 6px 5px;;
         margin: 10px;
     }
-    .second p{
+    .loginmain .second p{
         font-size: 1.6rem;
     }
-    .second label{
+    .loginmain .second label{
         /* text-shadow:1px 1px 1px rgba(237, 115, 115, 0.774); */
         font-size: 1rem;
     }
@@ -116,18 +116,18 @@ height: 100vh;
     .loginmain{
         background: linear-gradient(190deg,rgb(248, 105, 105),var(--secondary-color),var(--primary-color),var(--text-color));
     }
-    .first{
+    .loginmain .first{
         display: none;
     }
-    .second{
+    .loginmain .second{
         min-width: 80vw;
         padding: 10px 45px ;
        
     }
-    .second label{
+   .loginmain .second label{
         color: var(--primary-color);
     }
-    .second .field{
+    .loginmian .second .field{
             padding :7px 0;
     }
 }

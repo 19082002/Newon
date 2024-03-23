@@ -1,13 +1,26 @@
-export const addItem = (product) => {
+export const addcartItem = (product) => {
     return {
-        type : "ADDITEM",
+        type : "ADDCARTITEM",
         payload : product
     }
 }
 
-export const delItem = (product) => {
+export const delcartItem = (product) => {
     return {
-        type : "DELITEM",
+        type : "DELCARTITEM",
+        payload : product
+    }
+}
+export const addwishItem = (product) => {
+    return {
+        type : "ADDWISHITEM",
+        payload : product
+    }
+}
+
+export const delwishItem = (product) => {
+    return {
+        type : "DELWISHITEM",
         payload : product
     }
 }

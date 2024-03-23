@@ -3,14 +3,15 @@
     padding:0;
 }
 .cartcontainer{
-    width:100vw;
+    width:98vw;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
 .cartmain{
-    width:70%;
+    /* width:70%; */
+    max-width: 600px;
 box-shadow: 1px 1px 1px 1px var(--shadow-color);
 padding:15px;
 margin:15px 15px;
@@ -32,10 +33,12 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.786);
 }
 .cartpage .item{
 width:90%;
-max-width: 1000px;
+
 padding: 5px;
 margin :5px 0;
 display: flex;
+justify-content: space-between;
+align-items: center;
 box-shadow: 1px 1px 1px 1px rgba(245, 115, 137, 0.203);
 }
 .item_image{
@@ -71,14 +74,17 @@ position: relative;
     font-weight: bold;
 
 }
-.quantitybtn span{
+.quantitybtn .qty{
+    text-align: center;
     font-weight: bold;
     margin:0 8px;
-    color:var(--primary-color)
+    color:var(--primary-color);
+    background-color: var(--text-color);
 }
 .item .second{
     /* width:75vw; */
     position: relative;
+    margin-left: 20px;
 }
 .item .title{
     /* width:12vw; */
@@ -91,6 +97,8 @@ position: relative;
     color:var(--text-color);
 }
 .item .second .button{
+    /* position: absolute; */
+
     margin-top: 15px;
 }
 .item .second button{
@@ -122,25 +130,35 @@ justify-content: center;
     box-shadow: 1px 1px 1px var(--shadow-color);
 }
 .total{
-   width:18%;
-   margin-right: 10px;
+   /* width:18%; */
+   max-width: 300px;
+   
+   margin: 0 10px;
    word-wrap: break-word;
    overflow-wrap: break-word;
 }
 .endprice{
+    min-height:200px;
     position: relative;
-    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0.31px 1px 1px rgba(0, 0, 0, 0.373);
+    text-align: center;
+    /* margin: 8px 8px; */
 }
 .totalprice{
     
     /* right:50%; */
     padding:10px  5px;
     /* position: absolute; */
-    margin:8px 0;
+    
+    /* margin:8px 0; */
     color:var(--primary-color);
     font-weight: 800;
     text-align: center;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.373);
+    
     border-radius: 5px;
 }
 .totalprice .flex{
@@ -175,11 +193,12 @@ justify-content: center;
         width:90vw;
         /* position: relative; */
     }
-    .cartmain {
-        width:90%;
+    .cartmain .first {
+        /* width:90%; */
     }
     .cartmain .second{
-        /* width:50%; */
+        /* width:40%; */
+        margin-left: 10px;
     }
     .cartcontainer{
         flex-direction: column;
@@ -189,7 +208,7 @@ justify-content: center;
     }
     .total{
         width:auto;
-        margin-bottom:15px ;
+        margin-bottom:35px ;
     }
     .quantitybtn button{
         padding: 2px 5px;

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wishcontainer{
+    margin:15px;
+    text-align: center;
+}
+.wishcontainer .title{
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    color:var(--text-color)
+}
+.wishcontainer .itemcontainer{
+    display: flex;
+    overflow: scroll;
+    align-items: center;
+    /* justify-content: center; */
+}
+.itemcontainer::-webkit-scrollbar {
+    display: none;
+  }
+
+.wishcontainer .main{
+    /* overflow-wrap: normal; */
+    margin:25px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+ .empty{
+    color: var(--shadow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishcontainer .card{
+    width:30vw;
+    overflow: hidden;
+    padding:15px;
+    /* height:100px; */
+    /* border:1px solid black; */
+    box-shadow: 0.4px 0.4px 1px 0.4px var(--shadow-color);
+}
+.wishcontainer .card img{
+    width:40%
+}
+.wishcontainer .card .title{
+color:var(--primary-color);
+text-shadow: none;
+font-size: 1.2rem;
+font-weight: 400;
+}
+.wishcontainer .card .price{
+margin:5px 0;
+color:var(--text-color);
+
+}
+.wishcontainer .card .footbtn button{
+   background: none;
+    border: none;
+    padding:5px 10px;
+    margin:0 2px;
+    /* color:var(--text-color); */
+}
+.wishcontainer .card .footbtn .cartbtn{
+    background: var(--secondary-color);
+    color: aliceblue;
+}
+.wishcontainer .card .footbtn .removebtn{
+    color:var(--text-color)
+}
+@media screen and (max-width: 700px) {
+    .wishcontainer .card{
+        width:40vw;
+        padding: 5px;
+
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .wishcontainer .card{
+        width:50vw;
+    }
+}
+@media screen and (max-width: 350px) {
+    .wishcontainer .itemcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .wishcontainer .card{
+        width:85vw;
+        padding: 15px ;
+    }
+    .wishcontainer .main{
+        /* overflow-wrap: normal; */
+        margin:5px 5px;
+    }
+}

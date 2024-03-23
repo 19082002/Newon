@@ -1,24 +1,27 @@
 
 import { useSelector, useDispatch } from "react-redux";
-import { delItem, addItem } from "../redux/action/index";
+import { delcartItem, addcartItem,addwishItem } from "../redux/action/index";
 import "../css/cart.css";
 import { NavLink } from "react-router-dom";
 
 
 export default function Cart() {
-  const state = useSelector((state) => state.handle);
+  const state = useSelector((state) => state.f1);
   // console.log(state)
   const dispatch = useDispatch();
 
   const handleClose = (item) => {
     item.qty = 1;
-    dispatch(delItem(item));
+    dispatch(delcartItem(item));
   };
   const addproduct = (product) => {
-    dispatch(addItem(product));
+    dispatch(addcartItem(product));
   };
   const delproduct = (product) => {
-    dispatch(delItem(product));
+    dispatch(delcartItem(product));
+  };
+  const wishlistproduct = (product) => {
+    dispatch(addwishItem(product));
   };
   const cartItems = (cartItem) => {
     return (
@@ -31,7 +34,7 @@ export default function Cart() {
           </NavLink>
           <div className="quantitybtn">
             <button onClick={() => addproduct(cartItem)}>+</button>
-            <span>{cartItem.qty}</span>
+            <button className="qty">{cartItem.qty}</button>
             <button onClick={() => delproduct(cartItem)}>-</button>
           </div>
         </div>
@@ -43,7 +46,7 @@ export default function Cart() {
             ${cartItem.price}
           </div>
           <div className="button">
-            <button className="wishlist">Move to wishlist</button>
+            <button className="wishlist" onClick={() => wishlistproduct(cartItem)}>Move to wishlist</button>
             <button onClick={()=>handleClose(cartItem)} className="trash">Remove</button>
           </div>
         </div>
@@ -90,7 +93,7 @@ export default function Cart() {
     <>
     <div className="cartcontainer">
       <div className="cartmain">
-        <div className="heading">My Cart ({state.length})</div>
+        <div className="heading">My Cart {state.length !== 0 && `(${state.length})`}</div>
         <div className="cartpage">
           {state.length === 0 && emptyCart()}
           {state.length !== 0 && state.map(cartItems)}
