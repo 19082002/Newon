@@ -3,18 +3,20 @@
     padding:0;
 }
 .cartcontainer{
-    width:98vw;
+    width:97vw;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin:0 5px;
 }
 .cartmain{
     /* width:70%; */
     max-width: 600px;
-box-shadow: 1px 1px 1px 1px var(--shadow-color);
+    border-radius: 5px;
+    box-shadow: 0.5px 0.31px 1px 1px var(--shadow-color);
 padding:15px;
-margin:15px 15px;
+margin:15px 5px;
 /* border: 1px solid black; */
 
 }
@@ -23,7 +25,7 @@ margin:15px 15px;
 color:var(--text-color);
 font-size: 1.2rem;
 font-weight: 800;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.786);
+text-shadow: 1px 1px var(--textshadow-color);
 }
 .cartpage{
     display: flex;
@@ -39,7 +41,8 @@ margin :5px 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-box-shadow: 1px 1px 1px 1px rgba(245, 115, 137, 0.203);
+/* box-shadow: 1px 1px 1px 1px rgba(81, 66, 68, 0.203); */
+border-bottom: 1px solid var(--another-color);
 }
 .item_image{
     /* width:60%; */
@@ -110,11 +113,11 @@ position: relative;
 }
 .item .second .wishlist{
 background-color: var(--primary-color);
-color:var(--text-color);
+color:var(--secondtext-color);
 }
 .item .second .trash{
-    color:var(--another-color);
-box-shadow: 1px 1px 1px rgba(79, 91, 109, 0.379);
+    color:var(--secondary-color);
+box-shadow: 1px 1px 1px var(--shadow-color);
 }
 .container{
 display: flex;
@@ -133,7 +136,7 @@ justify-content: center;
    /* width:18%; */
    max-width: 300px;
    
-   margin: 0 10px;
+   margin: 0 2px;
    word-wrap: break-word;
    overflow-wrap: break-word;
 }
@@ -144,7 +147,8 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 0.31px 1px 1px rgba(0, 0, 0, 0.373);
+    border-radius: 5px;
+    box-shadow: 0.5px 0.31px 1px 1px var(--shadow-color);
     text-align: center;
     /* margin: 8px 8px; */
 }
@@ -155,7 +159,7 @@ justify-content: center;
     /* position: absolute; */
     
     /* margin:8px 0; */
-    color:var(--primary-color);
+    color:var(--secondary-color);
     font-weight: 800;
     text-align: center;
     
@@ -178,7 +182,7 @@ justify-content: center;
   border:none;
   background: none;
   background-color: var(--primary-color);
-  color:var(--text-color);
+  color:var(--secondtext-color);
   padding: 10px 15px;
   border-radius: 5px;
 }

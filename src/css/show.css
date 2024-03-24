@@ -1,6 +1,7 @@
 .mainshow{
     display:flex;
     flex-direction: column;
+    margin: 20px 0 0 0;
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -23,7 +24,7 @@ max-height: 500px;
 }
 .mainshow .title{
     font-size: 1.5rem;
-    color:var(--secondary-color);
+    color:var(--another-color);
     font-weight: 900;
     text-shadow: 0.05rem 0.01rem 0.01rem rgba(80, 77, 77, 0.649);
     margin: 10px 20px;
@@ -33,14 +34,14 @@ max-height: 500px;
     margin: 0 20px;
 }
 .prices .special{
-color:var(--primary-color);
+color:var(--secondary-color);
 margin: 10px 0 0 20px;
 }
 .prices .pric{
     margin: 0 20px;
 font-weight: 800;
 font-size: 2rem;
-color: var(--secondary-color);
+color: var(--text-color);
 
 }
 .rate{
@@ -52,14 +53,14 @@ color: var(--secondary-color);
     padding:5px 12px ;
     border-radius: 10px;
     margin:10px;
-    color: var(--text-color);
+    color: var(--another-color);
     display:flex;
     align-items: center;
     justify-content: center;
     
 }
 .count{
-    color:var(--another-color)
+    color:var(--secondary-color)
 }
 .btns{
     display: flex;
@@ -72,7 +73,7 @@ color: var(--secondary-color);
     /* font-size: ; */
     font-weight: 500;
     font-size: medium;
-    color:var(--text-color);
+    color:var(--secondtext-color);
     display:flex;
     align-items: center;
     justify-content: center;

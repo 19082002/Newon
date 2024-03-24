@@ -78,6 +78,10 @@ export default function Cart() {
             </div>
             <div className="delivery flex">
             <p>Delivery Charge </p>
+            <span className="price">$0</span>
+            </div>
+            <div className="delivery flex">
+            <p>Total Price </p>
             <span className="price">${Math.ceil(sum)}</span>
             </div>
             <div className="flex">

@@ -33,7 +33,7 @@
     object-fit: contain;
 }
  .hid{
-    color:var(--another-color);
+    color:var(--text-color);
     display: none;
     position: absolute;
     top:0;
@@ -75,7 +75,7 @@ text-align: left;
     border-radius: 5px;
     padding: 5px 15px;
     cursor: pointer;
-    color:var(--text-color);
+    color:var(--secondtext-color);
 }
 
 .cardmain{

@@ -46,7 +46,7 @@ height: 100vh;
 }
 .loginmain .second p{
     text-align: center;
-    color:var(--another-color);
+    color:var(--text-color);
     margin: 0 0 15px 0;;
     font-size: 2rem;
     font-weight: 800;
@@ -55,7 +55,7 @@ height: 100vh;
 .loginmain .second label{
     /* text-shadow:1px 1px 1px rgba(237, 115, 115, 0.774); */
     font-size: 1.2rem;
-    color:var(--text-color);
+    color:var(--another-color);
 
 }
 .loginmain .second input{
@@ -63,7 +63,7 @@ height: 100vh;
     border: none;
     /* border: 1px solid var(--shadow-color); */
     /* box-shadow: 0px 1px 0px 0.05rem var(--shadow-color); */
-    border-bottom: 1px solid var(--shadow-color);
+    border-bottom: 1px solid var(--secondary-color);
   background: none;
   margin:1px 0 20px 0;
   width:auto;
@@ -81,10 +81,10 @@ height: 100vh;
     border-radius: 5px;
     padding:10px 20px;
     margin:0 5px 0 0;
-    color:var(--text-color);
+    color:var(--secondtext-color);
 }
 .loginbtn a{
-    color:rgba(255, 255, 255, 0.921);
+    color:var(--another-color);
     padding:0 0 0 10px;
     /* text-decoration:; */
 
@@ -114,7 +114,7 @@ height: 100vh;
 @media screen and (max-width: 400px) {
 
     .loginmain{
-        background: linear-gradient(190deg,rgb(248, 105, 105),var(--secondary-color),var(--primary-color),var(--text-color));
+        background: linear-gradient(190deg,var(--text-color),var(--secondary-color),var(--primary-color));
     }
     .loginmain .first{
         display: none;
@@ -127,7 +127,14 @@ height: 100vh;
    .loginmain .second label{
         color: var(--primary-color);
     }
+    .loginmain .second input{
+        border-bottom: 1px solid var(--text-color);
+        /* color:var(--text-color) */
+    }
     .loginmian .second .field{
             padding :7px 0;
+    }
+    .loginbtn a{
+        color:var(--primary-color);
     }
 }

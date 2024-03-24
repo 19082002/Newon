@@ -12,11 +12,26 @@
     --shadow-color:#5D5C61;
     --text-color:#557A95; */
 
-    --primary-color: #2F4454 ;
+    /* --primary-color: #2F4454 ;
     --secondary-color: #376E6F;
     --shadow-color:#213a3b79;
     --text-color:#ec8aa2;
-    --another-color:#d02b62;
+    --another-color:#d02b62; */
+
+
+    --primary-color: #231c2c;
+    --secondary-color: #bb86fc;
+    --shadow-color:#8d6bac7c;
+    --text-color:#d02b62;
+    --secondtext-color:#018786;
+    --another-color:rgb(227, 201, 238);
+    --textshadow-color:rgb(99, 98, 100);
+    
+    /* --secondary-color: #6112d1; */
+
+
+    background-color: #121212;
+    color:antiquewhite;
 }
 a{
     border:none;
@@ -30,4 +45,7 @@ button{
 }
 input:focus{
 outline: none;
+}
+.title{
+    /* text-shadow: 1px 1px var(--textshadow-color); */
 }
