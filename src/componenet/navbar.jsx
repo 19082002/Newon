@@ -23,7 +23,7 @@ export default function Navbar() {
     setLoad(true);
   }, [load]);
   const handlefilter = (value) => {
-    const res = filterdata.filter((f) => f.title.toLowerCase().includes(value));
+    const res = filterdata.filter((f) => f.title.toLowerCase().includes(value.toLowerCase()));
     setData(res);
   };
   useEffect(() => {
