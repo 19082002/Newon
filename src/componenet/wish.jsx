@@ -1,14 +1,10 @@
 import "../css/wishlist.css";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { useLocation } from "react-router-dom";
+
 import { delwishItem,addcartItem } from "../redux/action/index";
 
-export default function Wishlist(props) {
-  console.log('props: ', props);
-  // const data=useLocation();
-  // const {data} = props.location;
-  // console.log('recieved data', data);
+export default function Wishlist() {
   const state = useSelector((state) => state.f2);
   const dispatch = useDispatch();
   const addproduct = (product) => {
@@ -47,7 +43,7 @@ export default function Wishlist(props) {
   const emptyWish = () => {
     return (
       <div className="empty">
-        <h1>Your Cart is Empty</h1>
+        <h1>Your wishlist is Empty</h1>
       </div>
     );
   };

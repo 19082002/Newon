@@ -9,12 +9,7 @@ import { Star,Heart } from 'lucide-react';
 export default function Product() {
   const [data, setData] = useState();
   const [load, setLoad] = useState(true);
-  const [click, setClick] = useState(true);
-  // const url = 'https://kohls.p.rapidapi.com/products/list?limit=24&offset=1&dimensionValueID=AgeAppropriate%3ATeens';
-
   const fetchdata = async () => {
-    // if(load)
-    // let clicked=false;
     const url = "https://fakestoreapi.com/products";
     const res = await fetch(url);
     const json = await res.json();
@@ -28,7 +23,6 @@ export default function Product() {
 
   const dispatch=useDispatch();
   const addproduct=(product)=>{
-      setClick(true);
       dispatch(addwishItem(product));
   }
 
