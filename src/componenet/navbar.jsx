@@ -6,7 +6,7 @@ import {  useSelector } from "react-redux";
 import { ShoppingCart, Heart,LogIn ,Search } from 'lucide-react';
 
 export default function Navbar() {
-  const [data, setData] = useState();
+  const [data, setData] = useState(null);
   const [filterdata, setFilterdata] = useState(true);
   const [load,setLoad]=useState(false);
   const fetchdata = async () => {
@@ -24,9 +24,11 @@ export default function Navbar() {
   }, [load]);
 const handlefilter =(value)=>{
   const res=filterdata.filter(f=>f.title.toLowerCase().includes(value))
-setData(res);
-console.log(res)
+  setData(res);
 }
+useEffect(() => {
+  console.log('data: ', data)
+}, [data]);
 
 // const emptyCart = () => {
 //   return (
@@ -45,10 +47,10 @@ console.log(res)
         <div className="search">
             <input type="text" onChange={e=>handlefilter(e.target.value)} />
             <p className="searchic" >
-              <NavLink to={{pathname:'/wishlist',
-                          state:{data}
+              <Link to={{pathname:'/wishlist',
+                          state: data
             
-            }}><Search/></NavLink>
+            }}><Search/></Link>
             </p>
             {/* <p>&#128269;</p> */}
           </div>  

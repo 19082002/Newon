@@ -20,7 +20,7 @@ function App() {
           <Route path="login" element={<Login/>} />
           <Route path="cart" element={<Cart/>} />
           <Route path="register" element={<Register/>} />
-          <Route path="wishlist" element={<Wishlist/>} />
+          <Route path="wishlist" Component={Wishlist} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

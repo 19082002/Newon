@@ -4,9 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { delwishItem,addcartItem } from "../redux/action/index";
 
-export default function Wishlist() {
+export default function Wishlist(props) {
+  console.log('props: ', props);
   // const data=useLocation();
-  // console.log(data);
+  // const {data} = props.location;
+  // console.log('recieved data', data);
   const state = useSelector((state) => state.f2);
   const dispatch = useDispatch();
   const addproduct = (product) => {
